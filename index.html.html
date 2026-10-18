@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เว็บไซต์แนะนำตัวของฉัน</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Tahoma, sans-serif;
+            background: #f0f6ff;
+            color: #24364b;
+            line-height: 1.8;
+        }
+
+        header {
+            background: #172b45;
+            color: white;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        header h2 {
+            color: #70b9ff;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 18px;
+        }
+
+        nav a:hover {
+            color: #70b9ff;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #dcecff, #ffffff);
+        }
+
+        .profile {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            background: #2478ee;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 45px;
+            margin: 0 auto 20px;
+            border: 5px solid white;
+            box-shadow: 0 5px 20px #00000015;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            color: #172b45;
+        }
+
+        .hero p {
+            margin: 10px 0 25px;
+            color: #64758b;
+        }
+
+        .button {
+            display: inline-block;
+            background: #2478ee;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background: #165fc4;
+        }
+
+        section {
+            padding: 55px 8%;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #172b45;
+            margin-bottom: 25px;
+            font-size: 28px;
+        }
+
+        .about {
+            text-align: center;
+            max-width: 750px;
+            margin: auto;
+        }
+
+        .skills {
+            background: #e3efff;
+        }
+
+        .skill-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .skill {
+            background: white;
+            padding: 20px 30px;
+            border-radius: 15px;
+            text-align: center;
+            min-width: 130px;
+            box-shadow: 0 4px 12px #00000008;
+        }
+
+        .projects-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .project {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 18px #0000000c;
+            text-align: center;
+        }
+
+        .project .icon {
+            font-size: 40px;
+        }
+
+        .contact {
+            background: #e3efff;
+            text-align: center;
+        }
+
+        .contact a {
+            color: #2478ee;
+        }
+
+        footer {
+            background: #172b45;
+            color: white;
+            text-align: center;
+            padding: 18px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                justify-content: center;
+            }
+
+            nav {
+                text-align: center;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px 8px;
+            }
+
+            .hero h1 {
+                font-size: 28px;
+            }
+
+            section {
+                padding: 40px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>MyProfile</h2>
+
+        <nav>
+            <a href="#home">หน้าแรก</a>
+            <a href="#about">เกี่ยวกับฉัน</a>
+            <a href="#skills">ทักษะ</a>
+            <a href="#projects">ผลงาน</a>
+            <a href="#contact">ติดต่อ</a>
+        </nav>
+    </header>
+
+    <div class="hero" id="home">
+        <div class="profile">ME</div>
+
+        <h1>สวัสดีครับ นายสหรัศม์ เอมโอด</h1>
+
+        <p>
+            ยินดีต้อนรับเข้าสู่เว็บไซต์แนะนำตัวของฉัน
+            <br>
+            ผมจะมาแนะนำตัวและประวัติและผลของผม
+        </p>
+
+        <a href="#about" class="button">รู้จักฉันมากขึ้น</a>
+    </div>
+
+    <section id="about">
+        <h2>👋 เกี่ยวกับฉัน</h2>
+
+        <div class="about">
+            <p>
+                สวัสดีครับ ผมชื่อ [นายสหรัศม์ เอมโอด]
+                กำลังศึกษาอยู่[มหาวิทยาลัยราชภัฎอุตรดิตถ์]
+                ผมเป็นคนที่ชอบเรียนรู้สิ่งใหม่ ๆ
+                สนใจเทคโนโลยี คอมพิวเตอร์ และการตัดคลิป
+                ในเวลาว่างชอบฟังเพลง เล่นเกม และทำกิจกรรมต่าง ๆ
+            </p>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2>💻 ทักษะของฉัน</h2>
+
+        <div class="skill-list">
+            <div class="skill">
+                <h3>🌐 HTML</h3>
+                <p>สร้างเว็บไซต์</p>
+            </div>
+
+            <div class="skill">
+                <h3>🤝 Teamwork</h3>
+                <p>ทำงานเป็นทีม</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>🏆 ผลงานของฉัน</h2>
+
+        <div class="projects-list">
+            <div class="project">
+                <div class="icon">💻</div>
+                <h3>เว็บไซต์แนะนำตัว</h3>
+                <p>ฝึกสร้างเว็บไซต์ด้วย HTML และ CSS</p>
+            </div>
+
+            <div class="project">
+                <div class="icon">📚</div>
+                <h3>ผลงานการเรียน</h3>
+                <p>ทำกิจกรรมในมหาวิทยาลัยและโรงเรียน</p>
+            </div>
+
+            <div class="project">
+                <div class="icon">🏅</div>
+                <h3>กิจกรรม</h3>
+                <p>เข้าร่วมกิจกรรมต่างๆของทางมหาวิทยาลัย</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>📩 ติดต่อฉัน</h2>
+
+        <p>อีเมล: mbomasaha33@gmail.com</p>
+        <p>Facebook: Saharat Em-od</p>
+        <p>Instagram: nmbcxz_</p>
+    </section>
+
+    <footer>
+        <p>© 2026 เว็บไซต์แนะนำตัวของฉัน 💙</p>
+    </footer>
+
+</body>
+</html>
